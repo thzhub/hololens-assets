@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 4051845873
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d10a47b006f7b7b668debe80a3e03d93
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ef93facc98962ba2acaf76316323fafa
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetDatabase/tables/IkeaHemnesCoffeeTableBrown/IkeaHemnesCoffeeTableBrown.prefab
+- Assets/AssetDatabase/tables/IkeaVikaManneTable/IkeaVikaManneTable.prefab
+- Assets/AssetDatabase/tables/IkeaGustavDesk/IkeaGustavDesk.prefab
+- Assets/AssetDatabase/tables/IkeaGrimleTableAnd5Chairs/IkeaGrimleTableAnd5Chairs.prefab
+- Assets/AssetDatabase/tables/IkeaFornbroPedestalTable/IkeaFornbroPedestalTable.prefab
+- Assets/AssetDatabase/tables/IkeaLackBlackTable/IkeaLackBlackTable.prefab
+- Assets/AssetDatabase/tables/Ike010002BjurstaTableAndRogerChairs/Ike010002BjurstaTableAndRogerChairs.prefab
+Dependencies: []

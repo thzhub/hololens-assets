@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 2794214093
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dabbb3d6d8665eb7c40241d7569871ef
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 069b4f427981f9803a7b215dd573c2d0
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetDatabase/lights/IkeaAntifoniWorkLamp/IkeaAntifoniWorkLamp.prefab
+- Assets/AssetDatabase/lights/IkeaDipodiFloorLamp/IkeaDipodiFloorLamp.prefab
+- Assets/AssetDatabase/lights/IkeaBasiskTableLamp/IkeaBasiskTableLamp.prefab
+- Assets/AssetDatabase/lights/IkeaBasiskPendantLamp/IkeaBasiskPendantLamp.prefab
+Dependencies: []

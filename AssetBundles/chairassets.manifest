@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 2617713872
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 781253401de04bac4d5def2bac542c4c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ef93facc98962ba2acaf76316323fafa
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetDatabase/chairs/IkeaJulesSwivelChair/IkeaJulesSwivelChair.prefab
+- Assets/AssetDatabase/chairs/IkeaKlappeChair/IkeaKlappeChair.prefab
+- Assets/AssetDatabase/chairs/IkeaFritzChair/IkeaFritzChair.prefab
+- Assets/AssetDatabase/chairs/IkeaForsbySmallStool/IkeaForsbySmallStool.prefab
+- Assets/AssetDatabase/chairs/IkeaGilbertChair/IkeaGilbertChair.prefab
+- Assets/AssetDatabase/chairs/IkeaSkruvstaSwivelChair/IkeaSkruvstaSwivelChair.prefab
+- Assets/AssetDatabase/chairs/IngolfChairWithArmrest/IngolfChairWithArmrest.prefab
+Dependencies: []

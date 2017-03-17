@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 2108951852
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 471bf1bf208b2ed24bb1200eefe85af6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ef93facc98962ba2acaf76316323fafa
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetDatabase/sofas/IkeaVreta3SeatSofaMjukIvory/IkeaVreta3SeatSofaMjukIvory.prefab
+- Assets/AssetDatabase/sofas/IkeaTylosandCornerSofa/IkeaTylosandCornerSofa.prefab
+- Assets/AssetDatabase/sofas/IkeaKipplan2SeatSofa/IkeaKipplan2SeatSofa.prefab
+- Assets/AssetDatabase/sofas/IkeaArild2SeatSofa/IkeaArild2SeatSofa.prefab
+- Assets/AssetDatabase/sofas/IkeaSolsta2SeatsSofa/IkeaSolsta2SeatsSofa.prefab
+- Assets/AssetDatabase/sofas/IkeaExarby3SeatsSofa/IkeaExarby3SeatsSofa.prefab
+- Assets/AssetDatabase/sofas/IkeaTullstaArmchair/IkeaTullstaArmchair.prefab
+Dependencies: []

@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 2749913222
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e1cf38cacf6ad70609a96922374c8bd0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ef93facc98962ba2acaf76316323fafa
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetDatabase/beds/IkeaSorumQueenBedFrame/IkeaSorumQueenBedFrame.prefab
+- Assets/AssetDatabase/beds/IkeaHeimdalBed160X200/IkeaHeimdalBed160X200.prefab
+- Assets/AssetDatabase/beds/IkeaBeddingeSofaBedFrame/IkeaBeddingeSofaBedFrame.prefab
+Dependencies: []
