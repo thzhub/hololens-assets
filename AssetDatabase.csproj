@@ -79,6 +79,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AssetDatabase\SpawnList.cs" />
+    <Compile Include="Assets\AssetDatabase\menu\CategoryMenuLoader.cs" />
+    <Compile Include="Assets\AssetDatabase\menu\FurnitureMenuItemProperty.cs" />
+    <Compile Include="Assets\AssetDatabase\menu\FurnitureProperty.cs" />
     <Compile Include="Assets\scripts\AssetManager.cs" />
     <Compile Include="Assets\scripts\assetBundle\AssetBundleLoadOperation.cs" />
     <Compile Include="Assets\scripts\assetBundle\AssetBundleLoader.cs" />
