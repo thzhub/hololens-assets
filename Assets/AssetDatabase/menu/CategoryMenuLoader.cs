@@ -1,45 +1,96 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CategoryMenuLoader : MonoBehaviour {
+public class CategoryMenuLoader : MonoBehaviour
+{
 
     public GameObject spawner;
-    public string category;
+
+    public List<GameObject> furniturePage;
+
+    public GameObject forward;
+    public GameObject backward;
+    public int pageSize;
+
     private List<GameObject> furnitures;
 
-	void Start () {
+    private Dictionary<string, int> pageHistory = new Dictionary<string, int>();
+    private string currentCategory;
+
+    public void LoadList(string category)
+    {
+        currentCategory = category;
         SpawnList spawnList = spawner.GetComponent<SpawnList>();
         furnitures = spawnList.findBundle(category);
 
-        int i = 0;
-        foreach (Transform child in transform)
+        int currentIndex = 0;
+        if (pageHistory.ContainsKey(category))
         {
-            if (child.gameObject.name.Equals("Button"))
+            currentIndex = pageHistory[category];
+        }
+        else
+        {
+            pageHistory[category] = 0;
+        }
+
+        int i = currentIndex * pageSize;
+
+        Debug.Log("category: " + category + " currentIndex: " + currentIndex + " i: " + i);
+
+        foreach (GameObject furnitureBtn in furniturePage)
+        {
+            if (i < Math.Min(furnitures.Count, (currentIndex + 1) * pageSize))
             {
-                if (i < furnitures.Count)
-                {
-                    GameObject f = furnitures[i];
-                    FurnitureProperty properties = spawnList.findAssetProperties(category, f.name);
-                    child.gameObject.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.bundle = properties.bundle;
-                    child.gameObject.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.assetName = properties.assetName;
-                    child.gameObject.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.furnitureType = properties.furnitureType;
-                    child.gameObject.GetComponent<Image>().sprite = spawnList.findAssetIcon(category, i);
-                    i++;
-                }
-                else
-                {
-                    child.gameObject.SetActive(false);
-                }
+                Debug.Log("at i: " + i);
+                furnitureBtn.SetActive(true);
+                GameObject f = furnitures[i];
+                FurnitureProperty properties = spawnList.findAssetProperties(category, f.name);
+                furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.bundle = properties.bundle;
+                furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.assetName = properties.assetName;
+                furnitureBtn.GetComponent<FurnitureMenuItemProperty>().furnitureProperty.furnitureType = properties.furnitureType;
+                furnitureBtn.GetComponent<Image>().sprite = spawnList.findAssetIcon(category, i);
+                i++;
+            }
+            else
+            {
+                furnitureBtn.SetActive(false);
             }
         }
 
-
+        if (furnitures.Count / pageSize == 0)
+        {
+            forward.SetActive(false);
+            backward.SetActive(false);
+        }
+        else if (currentIndex == 0)
+        {
+            forward.SetActive(true);
+            backward.SetActive(false);
+        }
+        else if (currentIndex >= furnitures.Count / pageSize)
+        {
+            forward.SetActive(false);
+            backward.SetActive(true);
+        }
+        else
+        {
+            backward.SetActive(true);
+            forward.SetActive(true);
+        }
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    public void nextPage()
+    {
+        pageHistory[currentCategory] = Math.Min(pageHistory[currentCategory] + 1, furnitures.Count / pageSize);
+        LoadList(currentCategory);
+    }
+
+    public void prevPage()
+    {
+        pageHistory[currentCategory] = Math.Max(pageHistory[currentCategory] - 1, 0);
+        LoadList(currentCategory);
+    }
 }
