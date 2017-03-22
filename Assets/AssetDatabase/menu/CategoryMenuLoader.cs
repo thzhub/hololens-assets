@@ -60,7 +60,7 @@ public class CategoryMenuLoader : MonoBehaviour
             }
         }
 
-        if (furnitures.Count / pageSize == 0)
+        if (furnitures.Count <= pageSize)
         {
             forward.SetActive(false);
             backward.SetActive(false);
