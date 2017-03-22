@@ -11,6 +11,7 @@ public class SpawnList : MonoBehaviour {
     public List<GameObject> drawers;
     public List<GameObject> lights;
     public List<GameObject> beds;
+    public List<GameObject> others;
 
     public List<Sprite> chairSprites;
     public List<Sprite> tableSprites;
@@ -19,6 +20,7 @@ public class SpawnList : MonoBehaviour {
     public List<Sprite> drawerSprites;
     public List<Sprite> lightSpritess;
     public List<Sprite> bedSprites;
+    public List<Sprite> otherSprites;
 
     private static string CHAIR_ASSETS = "chairassets";
     private static string DRAWER_ASSETS = "drawerassets";
@@ -27,6 +29,7 @@ public class SpawnList : MonoBehaviour {
     private static string BED_ASSETS = "bedassets";
     private static string STORGE_ASSETS = "storageassets";
     private static string LIGHT_ASSETS = "lightassets";
+    private static string OTHER_ASSETS = "otherassets";
 
 
     public GameObject findAsset(string bundle, string asset)
@@ -59,6 +62,8 @@ public class SpawnList : MonoBehaviour {
             return storageSprites;
         else if (bundle.Equals(LIGHT_ASSETS))
             return lightSpritess;
+        else if (bundle.Equals(OTHER_ASSETS))
+            return otherSprites;
         else
             return new List<Sprite>();
     }
@@ -84,6 +89,8 @@ public class SpawnList : MonoBehaviour {
             return storage;
         else if (bundle.Equals(LIGHT_ASSETS))
             return lights;
+        else if (bundle.Equals(OTHER_ASSETS))
+            return others;
         else
             return new List<GameObject>();
     }
