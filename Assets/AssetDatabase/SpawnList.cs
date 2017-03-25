@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnList : MonoBehaviour {
+public class SpawnList : MonoBehaviour
+{
 
     public List<GameObject> chairs;
     public List<GameObject> tables;
@@ -238,9 +239,9 @@ public class SpawnList : MonoBehaviour {
         {  "IkeaMinutLampadaire", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaMinutLampadaire", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE, title = "Minut Floor Lamp", description = "" } },
         {  "IkeaNotLampadaire", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaNotLampadaire", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE, title = "Not Floor Lamp", description = "" } },
         {  "IkeaNotLampadaireVariante2", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaNotLampadaireVariante2", furnitureType = FurnitureProperty.FurnitureType.GROUND_PLACEABLE, title = "Not Floor Lamp", description = "" } },
-        {  "IkeaBasiskLightingTrack", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Not Floor Lamp", description = "" } },
-        {  "IkeaFadoSuspension", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "", furnitureType = FurnitureProperty.FurnitureType.CEILING_PLACEABLE, title = "Not Floor Lamp", description = "" } },
-        {  "IkeaFlyggeWallSpotlight", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Not Floor Lamp", description = "" } }
+        {  "IkeaBasiskLightingTrack", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaBasiskLightingTrack", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Not Floor Lamp", description = "" } },
+        {  "IkeaFadoSuspension", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaFadoSuspension", furnitureType = FurnitureProperty.FurnitureType.CEILING_PLACEABLE, title = "Not Floor Lamp", description = "" } },
+        {  "IkeaFlyggeWallSpotlight", new FurnitureProperty { bundle = LIGHT_ASSETS, assetName = "IkeaFlyggeWallSpotlight", furnitureType = FurnitureProperty.FurnitureType.WALL_PLACEABLE, title = "Not Floor Lamp", description = "" } }
     };
 
     public static Dictionary<string, FurnitureProperty> OTHER_DICTIONARY = new Dictionary<string, FurnitureProperty>()

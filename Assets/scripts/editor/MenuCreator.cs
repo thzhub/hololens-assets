@@ -35,4 +35,20 @@ public class MenuCreator : MonoBehaviour {
                 return new List<GameObject>();
         }
     }
+
+    [MenuItem("GameObject/ScaleFurniture", false, 0)]
+    static void ScaleFurniture(MenuCommand command)
+    {
+        GameObject parent = (GameObject)command.context;
+        GameObject child = parent.transform.GetChild(0).gameObject;
+
+        Bounds bounds = child.GetComponent<MeshFilter>().sharedMesh.bounds;
+
+        float idealTop = 1.8f;
+        float ActualY =  bounds.center.y + bounds.extents.y;
+        float ratio = idealTop / ActualY;
+
+        child.transform.localScale = new Vector3(ratio, ratio, ratio);
+
+    }
 }
